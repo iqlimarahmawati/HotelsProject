@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="118" id="KGk-i7-Jjw" customClass="HotelsNearbyListCell" customModule="HotelsProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="119"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="119"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hotel1" translatesAutoresizingMaskIntoConstraints="NO" id="qDw-sB-NGu">
+                        <rect key="frame" x="16" y="9" width="101" height="101"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="101" id="4xp-A7-eJn"/>
+                            <constraint firstAttribute="height" constant="101" id="UT0-tF-ULL"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotel kita" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnn-64-thv">
+                        <rect key="frame" x="125" y="37" width="69" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jalan kita" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXC-q2-7un">
+                        <rect key="frame" x="125" y="60" width="69" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vr5-Se-OzK">
+                        <rect key="frame" x="280" y="60" width="24" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$300" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2P-rp-9m9">
+                        <rect key="frame" x="264" y="37" width="40" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Vc8-js-3fc">
+                        <rect key="frame" x="262" y="62.666666666666671" width="15" height="15"/>
+                        <color key="tintColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15.33" id="1ci-YX-NLm"/>
+                            <constraint firstAttribute="width" constant="15" id="Uu2-Uf-z2B"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="h2P-rp-9m9" secondAttribute="trailing" constant="16" id="1l9-IF-lfd"/>
+                    <constraint firstItem="vr5-Se-OzK" firstAttribute="top" secondItem="h2P-rp-9m9" secondAttribute="bottom" constant="3" id="51x-uz-u7l"/>
+                    <constraint firstItem="vr5-Se-OzK" firstAttribute="top" secondItem="h2P-rp-9m9" secondAttribute="bottom" constant="3" id="5Wh-y8-wfk"/>
+                    <constraint firstItem="qDw-sB-NGu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="DxC-Xt-CX1"/>
+                    <constraint firstItem="ZXC-q2-7un" firstAttribute="leading" secondItem="qDw-sB-NGu" secondAttribute="trailing" constant="8" symbolic="YES" id="EJw-NQ-r3g"/>
+                    <constraint firstItem="bnn-64-thv" firstAttribute="leading" secondItem="qDw-sB-NGu" secondAttribute="trailing" constant="8" symbolic="YES" id="SLK-bJ-7T9"/>
+                    <constraint firstItem="ZXC-q2-7un" firstAttribute="top" secondItem="bnn-64-thv" secondAttribute="bottom" constant="3" id="T9O-Iq-rQN"/>
+                    <constraint firstItem="vr5-Se-OzK" firstAttribute="leading" secondItem="Vc8-js-3fc" secondAttribute="trailing" constant="3" id="UuE-7z-phX"/>
+                    <constraint firstItem="h2P-rp-9m9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="37" id="Zef-3i-Yca"/>
+                    <constraint firstItem="vr5-Se-OzK" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="li6-BI-9kR"/>
+                    <constraint firstItem="Vc8-js-3fc" firstAttribute="top" secondItem="h2P-rp-9m9" secondAttribute="bottom" constant="6" id="mF5-Ib-zPX"/>
+                    <constraint firstAttribute="bottom" secondItem="qDw-sB-NGu" secondAttribute="bottom" constant="9" id="up7-Fx-Z64"/>
+                    <constraint firstItem="qDw-sB-NGu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="wAO-ah-0vl"/>
+                    <constraint firstItem="bnn-64-thv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="37" id="wMj-8A-Ugn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="hotelAddress" destination="ZXC-q2-7un" id="7AP-Cg-11t"/>
+                <outlet property="hotelImage" destination="qDw-sB-NGu" id="cOC-gh-vg2"/>
+                <outlet property="hotelName" destination="bnn-64-thv" id="XbT-Z0-7Ft"/>
+                <outlet property="hotelPrice" destination="h2P-rp-9m9" id="qvr-aO-8Ek"/>
+                <outlet property="hotelRating" destination="vr5-Se-OzK" id="qxF-4p-aMv"/>
+                <outlet property="ratingIcon" destination="Vc8-js-3fc" id="RSI-dI-Lpg"/>
+            </connections>
+            <point key="canvasLocation" x="130.76923076923077" y="14.218009478672984"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="hotel1" width="544" height="304"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
